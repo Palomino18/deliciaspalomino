@@ -1,0 +1,593 @@
+/* SOBRE NOSOTROS */
+
+body{
+    background-color: #ebebeb;
+}
+
+#fotoPanes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; 
+    background: url(../images/panesss.jpg) center/cover no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 30px;
+}
+
+#fotoPanes h1 {
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.74);
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    backdrop-filter: blur(3px);
+    
+}
+
+#enlaces {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: linear-gradient(135deg, #f9a825, #ff6f00);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#enlaces a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#enlaces a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+#logo{
+    border-radius: 200px;
+    height: 250px;
+    width: 250px;
+    margin-right: 30px;
+}
+
+#nuetraHistoria {
+    background-color: #FAF3E0; 
+    padding: 40px;
+    border-left: 5px solid #D4A373; 
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    height: 500px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  
+    
+}
+
+#nuetraHistoria h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #8B5E3B;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#historia {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #5A4633;
+    text-align: justify;
+    float: left;
+    
+}
+
+#imagenNosotros{
+
+   width: 600px;
+   margin-right: 200px;
+   margin-top: 125px;
+}
+
+
+#cajas{
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+}
+
+#pie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#b7e1d8; /* Fondo suave pastel */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #5d3a1a; /* Color marrón cálido */
+    text-align: center;
+    margin-top: 100px;
+    width: 98%;
+    margin: auto;
+    height: 150px;
+    
+}
+
+#pie img {
+    max-width: 150px; 
+    margin-left: 200px; 
+    border-radius: 50%;
+    height: 160px;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#pie img:hover{
+    transform: scale(1.45);
+}
+
+table {
+    width: 50%; 
+    margin-top: 0;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 8px 15px; 
+    text-align: center;
+    font-size: 16px; 
+    font-weight: normal;
+    border: none; /* Sin bordes */
+    background-color: transparent; /* Sin color de fondo */
+}
+
+table tr:nth-child(even) {
+    background-color: transparent; /* No hay color de fondo para las filas alternas */
+}
+
+table tr:hover {
+    background-color: transparent; /* Sin cambio de fondo al pasar el mouse */
+}
+
+/* PANES */
+#divPanes{
+    height: 100px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px 20px 20px rgb(5, 5, 5);
+    border-radius: 10px;
+    margin-top: 10px;
+    background: url(../images/panes2.jpg)center/cover no-repeat;
+
+}
+
+#h1Panes{
+    background-color: rgba(0, 0, 0, 0.61);
+    color: rgb(248, 244, 244);
+    height: 50px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.imagesPanes{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    }
+
+
+/* Contenedor principal para los panes */
+#dinpanes1, #dinpanes2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de cada producto */
+.producto {
+    background-color: #fff;
+    border: 1px solid #d7a15c;
+    border-radius: 12px;
+    padding: 20px;
+    width: 390px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover para resaltar el producto */
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para las imágenes de los panes */
+.imagesPanes {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Títulos de los panes */
+.producto h3 {
+    color: #d7a15c;
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+/* Descripción del pan */
+.producto p {
+    font-size: 20px;
+    color: #4b3f29;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Fondo de los contenedores */
+#dinpanes1, #dinpanes2 {
+    background-color: #202020a8;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el pie de página (si se requiere) */
+footer {
+    background-color: #f8c59d;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1em;
+    color: #4b3f29;
+}
+
+#fonfo{
+    margin-bottom: 0;
+}
+
+#valor{
+    background: linear-gradient(135deg, #f9a825, #ff6f00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 70%;
+    margin: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: black;
+    font-size: 20px;
+    
+}
+
+#carrito{
+    height: 45px;
+    width: 45px;
+}
+
+#valor:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+/*BOLLERIA*/
+#divBolleria{
+    height: 100px;
+width: 50%;
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 20px 20px 20px rgb(5, 5, 5);
+border-radius: 10px;
+margin-top: 10px;
+background: url(../images/bolleria.jpg)center/cover no-repeat;
+}
+
+#dinbolleria, #dinbolleria2, #dinbolleria3 {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #202020a8;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.producto1{
+    background-color: #fff;
+    border: 1px solid #d7a15c;
+    border-radius: 12px;
+    padding: 20px;
+    width: 290px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover para resaltar el producto */
+.producto1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para las imágenes de los panes */
+.imagesPanes {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Títulos de los panes */
+.producto1 h3 {
+    color: #d7a15c;
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+/* Descripción del pan */
+.producto1 p {
+    font-size: 20px;
+    color: #4b3f29;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.producto2{
+    background-color: #fff;
+    border: 1px solid #d7a15c;
+    border-radius: 12px;
+    padding: 20px;
+    width: 290px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover para resaltar el producto */
+.producto2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para las imágenes de los panes */
+.imagesPanes {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Títulos de los panes */
+.producto2 h3 {
+    color: #d7a15c;
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+
+/* Descripción del pan */
+.producto2 p {
+    font-size: 20px;
+    color: #4b3f29;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+
+#valor1{
+    background: linear-gradient(135deg, #f9a825, #ff6f00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: black;
+    font-size: 20px;
+}
+#valor1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* TARTAS */
+#divTartas{
+    height: 100px;
+width: 50%;
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 20px 20px 20px rgb(5, 5, 5);
+border-radius: 10px;
+margin-top: 10px;
+background: url(../images/tartas.jpg)center/cover no-repeat;
+}
+
+
+.producto3{
+    background-color: #fff;
+    border: 1px solid #d7a15c;
+    border-radius: 12px;
+    padding: 20px;
+    width: 430px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover para resaltar el producto */
+.producto3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para las imágenes de los panes */
+.imagesPanes1 {
+    width: 100%;
+    border-radius: 8px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Títulos de los panes */
+.producto3 h3 {
+    color: #d7a15c;
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+
+
+/* Descripción del pan */
+.producto3 p {
+    font-size: 20px;
+    color: #4b3f29;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* CONTACTOS */
+#divContacto{
+    height: 100px;
+width: 50%;
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 20px 20px 20px rgb(5, 5, 5);
+border-radius: 10px;
+margin-top: 10px;
+background: url(../images/contacto.jpg)center/cover no-repeat;
+margin-bottom: 50px;
+}
+
+#h1Cont{
+    background-color: rgba(0, 0, 0, 0.767);
+    color: rgb(248, 244, 244);
+    height: 50px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+
+
+#formulario {
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: auto;
+}
+
+#formulario:hover {
+    transform: scale(1.02);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+}
+
+#formulario label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+#formulario input{
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0 1rem;
+    border: 2px solid #ddd;
+    border-radius: 0.7rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#formulario textarea{
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0 1rem;
+    border: 2px solid #ddd;
+    border-radius: 0.7rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    height: 200px;
+}
+
+#formulario input:focus, #formulario textarea:focus {
+    border-color: #ff6b6b;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 107, 107, 0.4);
+}
+
+#formulario button {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#formulario button:hover {
+    background-color: #f7b42c;
+    transform: scale(1.05);
+}
+
+#nombre, #telefono, #email, #ubicacion, #mensaje {
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+#espacio{
+    height: 100px;
+}
